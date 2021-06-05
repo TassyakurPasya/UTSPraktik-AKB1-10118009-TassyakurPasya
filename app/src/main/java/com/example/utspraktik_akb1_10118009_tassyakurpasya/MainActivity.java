@@ -1,11 +1,13 @@
 package com.example.utspraktik_akb1_10118009_tassyakurpasya;
-
+//05/06/2021, membuat mainactivity, 10118009, Tassyakur Pasya, IF01
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -52,4 +54,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void Tampilan2(View view) {
+        Intent intent = new Intent(this, Tampilan2.class);
+        startActivity(intent);
+    }
+//    public void Tampilan2(View view) {
+//        Intent intent = new Intent(this, Tampilan2.class);
+//        EditText editText = findViewById(R.id.editnik);
+//        EditText editText2 = findViewById(R.id.editnama);
+//        TextView editText3 = findViewById(R.id.edittanggal);
+//        String pesan1,pesan2 = editText.getText().toString();
+//        int pesan3 = TextView.getText().toString();
+//
+//        intent.putExtra("nik", pesan1);
+//        intent.putExtra("nama", pesan2);
+//        intent.putExtra("tanggal", pesan3);
+//        startActivity(intent);
+//
+//    }
 }
